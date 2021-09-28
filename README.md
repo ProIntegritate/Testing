@@ -64,6 +64,8 @@ Note: If you provide no rules file, it will basically be a dumb low interaction 
 
 All logging uses Append mode, logfiles are not locked (which is a stupid practice), so if you want to parse the logfiles, just move it somewhere and parse it, new entries will be created in a new logfile with the same name.
 
+![Log Sample](Akacia.LogSample.png)
+
 ## Limitations
 - For now only an executable will be released.
 - Logfiles will have to be gathered manually, if you want automatic forwarding, that is for you to build.
