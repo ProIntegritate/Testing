@@ -79,3 +79,6 @@ All logging uses Append mode, logfiles are not locked (which is a stupid practic
 3. Done. Everything is included in the standalone executable.
 
 ![Started](Akacia.Started.png)
+
+Thats it.
+Feedback, Requests and Bug reports are welcome: [https://twitter.com/pro_integritate](https://twitter.com/pro_integritate)
