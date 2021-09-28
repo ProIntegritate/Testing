@@ -26,25 +26,25 @@ Only some basic rule examples are provided as i don't have the time to write rul
 
 There are also some variables that can be used in responses to make the honeypot look more alive and not as static:
 
-%now% and %date% returns a basic timestamp using whatever system format is configured
-%zulunow% and %zuludate% returns the same, but with UTC time.
-%year% returns a 4 digit year
-%month% returns a 2 digit month
-%day% returns a 2 digit day
-%hour% returns a 2 digit hour
-%minute% returns a 2 digit minute
-%second% returns a 2 digit second
-%millisecond% returns a 3 digit millisecond
+- %now% and %date% returns a basic timestamp using whatever system format is configured
+- %zulunow% and %zuludate% returns the same, but with UTC time.
+- %year% returns a 4 digit year
+- %month% returns a 2 digit month
+- %day% returns a 2 digit day
+- %hour% returns a 2 digit hour
+- %minute% returns a 2 digit minute
+- %second% returns a 2 digit second
+- %millisecond% returns a 3 digit millisecond
 
 There is also UTC variants, the following are supported:
-%zuluyear%, %zulumonth%, %zuluday%, %zuluhour%, %zuluminute%, %zulusecond%
+- %zuluyear%, %zulumonth%, %zuluday%, %zuluhour%, %zuluminute%, %zulusecond%
 
-%weekday% returns a litteral string, i.e. "Monday"
-%zuluweekday% returns a UTC based litteral string
+- %weekday% returns a litteral string, i.e. "Monday"
+- %zuluweekday% returns a UTC based litteral string
 
-%remoteendpoint% returns the remote endpoint, i.e. 1.2.3.4:80
-%remoteip% returns the remote ip adress, i.e. 1.2.3.4
-%localendpoint% and %localip% do the same, but for the local endpoint/ip
+- %remoteendpoint% returns the remote endpoint, i.e. 1.2.3.4:80
+- %remoteip% returns the remote ip adress, i.e. 1.2.3.4
+- %localendpoint% and %localip% do the same, but for the local endpoint/ip
 
 Aaaand hex values can also be used {0x00}, {0x01}, ..., {0xff}
 
@@ -52,10 +52,10 @@ Aaaand hex values can also be used {0x00}, {0x01}, ..., {0xff}
 
 You can start multiple instances of Akacia with different configs, using different ports an protocols:
 
-Simulate a Webserver:
+Simulate a Webserver:<br/>
 **C:\> start Akacia.exe -i0.0.0.0 -PTCP -p80 -t500 -rwebserver-rules.txt -lAkacia_Web_%date%.log**
 
-Simulate a Syslog server:
+Simulate a Syslog server:<br/>
 **C:\> start Akacia.exe -i0.0.0.0 -PUDP -p514 -t500 -rsyslog-rules.txt -lAkacia_Syslog_%date%.log**
 
 Note: If you provide no rules file, it will basically be a dumb low interaction honeypot.
