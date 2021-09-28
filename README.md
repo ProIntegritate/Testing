@@ -4,8 +4,6 @@
 
 Akacia is a high quality honey that is tasty and very sticky. It is made from the flower Robinia, which is called "False Akacia", which is a pretty good name for a Honeypot.
 
-![Started](Akacia.Started.png)
-
 Akacia can simulate TCP and UDP services, it supports rules that return data on interaction. Rules are RegEx based and both the responses and rules can be Base64 encoded so that complex structures, like HTML which is multiline can be delivered back to the client.
 
 ## Rules
@@ -69,7 +67,7 @@ All logging uses Append mode, logfiles are not locked (which is a stupid practic
 ## Limitations
 - For now only an executable will be released.
 - Logfiles will have to be gathered manually, if you want automatic forwarding, that is for you to build.
-- License: Creative Commons - Non commercial. Basically like CCZero, but you are not allowed to profit from this, like being an MSSP. The password for the zip file is "CC-NC" (capital letters).
+- License: **Creative Commons - Non commercial**. Basically like CCZero, but you are not allowed to profit from this, like being an MSSP. The password for the zip file is "CC-NC" (capital letters). If you want to throw up some Honeypots on your corporate network to detect scanning and probing, i'm fine with that. I just don't want security companies to use this for free and make money on it.
 
 ![License Creative Commons - Non Commercial](CC-NC.png)
 
@@ -78,3 +76,4 @@ All logging uses Append mode, logfiles are not locked (which is a stupid practic
 2. If you haven't got .NET runtine 4.7.2. installed, get that now.
 3. Done. Everything is included in the standalone executable.
 
+![Started](Akacia.Started.png)
