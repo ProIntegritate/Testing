@@ -15,9 +15,9 @@
             If Now.Millisecond > (995 - iTimeTaken) Then Threading.Thread.Sleep(iTimeTaken + 1) ' 1 ms here and there, really...
             iMS = Now.Millisecond
 
-            While ((Now.Millisecond - 5) <= iMS) ' Hogs cpu for a small bit, need to be rerun several times
+            While ((Now.Millisecond - 5) <= iMS)
                 iCount = 0
-                For N = 0 To 9999 
+                For N = 0 To 9999 ' Hogs cpu for a small bit, need to be rerun several times
                     iCount = iCount + 1
                 Next
             End While
