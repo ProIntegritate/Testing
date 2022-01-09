@@ -1,4 +1,4 @@
 # Testing
-Repo for testing
+Repo for testing various stuff.
 
-See **install_dotnet50.sh** for quick install of .NET 5.0 runtime files.
+Install scripts moved here:  https://github.com/ProIntegritate/Install-scripts/tree/main
